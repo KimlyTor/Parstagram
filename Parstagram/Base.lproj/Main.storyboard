@@ -133,52 +133,49 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="404" id="6S9-4E-X7E" customClass="PostCell" customModule="Parstagram" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="404"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="383" id="6S9-4E-X7E" customClass="PostCell" customModule="Parstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="383"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6S9-4E-X7E" id="OqG-1g-Ze1">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="404"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="383"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Cu-Gd-Rzr">
-                                                    <rect key="frame" x="8" y="356" width="48" height="21"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="vlp-kQ-K3R">
+                                                    <rect key="frame" x="8" y="8" width="367" height="312.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="48" id="EN3-d3-bQj"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nice photo!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N93-Na-Zyu">
-                                                    <rect key="frame" x="90" y="356" width="88.5" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vlp-kQ-K3R">
-                                                    <rect key="frame" x="8" y="8" width="345" height="340"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="345" id="yBc-0b-UMg"/>
+                                                        <constraint firstAttribute="width" secondItem="vlp-kQ-K3R" secondAttribute="height" multiplier="317:270" id="8RJ-fb-1h5"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nice photo!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N93-Na-Zyu">
+                                                    <rect key="frame" x="55" y="328.5" width="88.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Cu-Gd-Rzr">
+                                                    <rect key="frame" x="15" y="328.5" width="30" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="8Cu-Gd-Rzr" firstAttribute="top" secondItem="vlp-kQ-K3R" secondAttribute="bottom" constant="8" id="1Jt-F1-aXR"/>
-                                                <constraint firstItem="8Cu-Gd-Rzr" firstAttribute="firstBaseline" secondItem="N93-Na-Zyu" secondAttribute="firstBaseline" id="5S8-tI-tvY"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="8Cu-Gd-Rzr" secondAttribute="bottom" constant="16" id="DHm-hA-CyT"/>
-                                                <constraint firstItem="8Cu-Gd-Rzr" firstAttribute="leading" secondItem="OqG-1g-Ze1" secondAttribute="leading" constant="8" id="QPR-kH-ecl"/>
-                                                <constraint firstItem="vlp-kQ-K3R" firstAttribute="top" secondItem="OqG-1g-Ze1" secondAttribute="top" constant="8" id="QUM-7P-rGd"/>
-                                                <constraint firstItem="8Cu-Gd-Rzr" firstAttribute="top" secondItem="vlp-kQ-K3R" secondAttribute="bottom" constant="8" id="aR4-iN-faR"/>
-                                                <constraint firstAttribute="trailing" secondItem="vlp-kQ-K3R" secondAttribute="trailing" constant="8" id="mDz-xc-dTN"/>
-                                                <constraint firstItem="8Cu-Gd-Rzr" firstAttribute="baseline" secondItem="N93-Na-Zyu" secondAttribute="baseline" id="qZP-YX-uW3"/>
-                                                <constraint firstItem="N93-Na-Zyu" firstAttribute="leading" secondItem="8Cu-Gd-Rzr" secondAttribute="trailing" constant="34" id="wuB-gc-7RM"/>
-                                                <constraint firstItem="vlp-kQ-K3R" firstAttribute="leading" secondItem="OqG-1g-Ze1" secondAttribute="leading" constant="8" id="xoG-oF-NWI"/>
+                                                <constraint firstItem="vlp-kQ-K3R" firstAttribute="top" secondItem="OqG-1g-Ze1" secondAttribute="top" constant="8" id="3pT-d8-1qL"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="8Cu-Gd-Rzr" secondAttribute="bottom" constant="23" id="DpU-AR-BJd"/>
+                                                <constraint firstAttribute="trailing" secondItem="vlp-kQ-K3R" secondAttribute="trailing" constant="8" id="Fi5-Nl-trH"/>
+                                                <constraint firstItem="vlp-kQ-K3R" firstAttribute="leading" secondItem="OqG-1g-Ze1" secondAttribute="leading" constant="8" id="KpZ-Qq-K0x"/>
+                                                <constraint firstItem="8Cu-Gd-Rzr" firstAttribute="firstBaseline" secondItem="N93-Na-Zyu" secondAttribute="baseline" id="NRJ-Gb-Ld7"/>
+                                                <constraint firstItem="N93-Na-Zyu" firstAttribute="leading" secondItem="8Cu-Gd-Rzr" secondAttribute="trailing" constant="10" id="VBH-0x-xjG"/>
+                                                <constraint firstItem="8Cu-Gd-Rzr" firstAttribute="leading" secondItem="OqG-1g-Ze1" secondAttribute="leadingMargin" id="dt4-NY-voG"/>
+                                                <constraint firstItem="8Cu-Gd-Rzr" firstAttribute="centerY" secondItem="N93-Na-Zyu" secondAttribute="centerY" id="iKn-52-Moq"/>
+                                                <constraint firstItem="8Cu-Gd-Rzr" firstAttribute="top" secondItem="vlp-kQ-K3R" secondAttribute="bottom" constant="8" id="kFT-Og-5SM"/>
+                                                <constraint firstItem="8Cu-Gd-Rzr" firstAttribute="firstBaseline" secondItem="N93-Na-Zyu" secondAttribute="firstBaseline" id="x76-wL-kvA"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="captionLabel" destination="N93-Na-Zyu" id="b7g-fe-ARQ"/>
-                                            <outlet property="photoView" destination="vlp-kQ-K3R" id="p76-D2-53g"/>
-                                            <outlet property="userNameLabel" destination="8Cu-Gd-Rzr" id="Q8X-JK-ut2"/>
+                                            <outlet property="captionLabel" destination="N93-Na-Zyu" id="5xL-uI-Hyd"/>
+                                            <outlet property="photoView" destination="vlp-kQ-K3R" id="m3S-PW-Zpo"/>
+                                            <outlet property="userNameLabel" destination="8Cu-Gd-Rzr" id="ZhJ-Bz-5mg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -187,11 +184,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="JwN-40-yRS"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VoT-QL-Yez">
-                        <barButtonItem key="rightBarButtonItem" title="cameraButton" image="insta_camera_btn" id="Gmp-7b-7uQ">
+                    <navigationItem key="navigationItem" id="w2Y-6B-Fcd">
+                        <barButtonItem key="rightBarButtonItem" title="cameraButton" image="insta_camera_btn" id="PoI-YM-8bZ">
                             <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
-                                <segue destination="LgP-No-IFp" kind="presentation" modalPresentationStyle="fullScreen" id="iNq-an-2zK"/>
+                                <segue destination="LgP-No-IFp" kind="presentation" modalPresentationStyle="fullScreen" id="tLU-8p-arp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
