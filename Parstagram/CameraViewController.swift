@@ -42,7 +42,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
                 print("error!")
             }
         }
-        
+        dismiss(animated: true, completion: nil) 
         
     }
     
