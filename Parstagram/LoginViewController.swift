@@ -12,9 +12,7 @@ import Parse
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var userNameField: UITextField!
-    
     @IBOutlet weak var passwordField: UITextField!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +44,8 @@ class LoginViewController: UIViewController {
             if success{
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }else{
-                print("Error:\(error?.localizedDescription)")
+                print("Error\(error?.localizedDescription)")
+                
             }
         }
 
