@@ -65,7 +65,7 @@ class CameraViewController: UIViewController, UIImagePickerControllerDelegate, U
         let image = info[.editedImage] as! UIImage       //store the mage as an array
         
         let size = CGSize(width: 300, height: 300)      //resized the image to 300 times 300
-        let scaleImage = image.af_imageScaled(to: size) // use AlamofireImage instead of Parse/Heroku
+        let scaleImage = image.af_imageAspectScaled(toFit: size) // use AlamofireImage instead of Parse/Heroku
         
         imageView.image = scaleImage
         
